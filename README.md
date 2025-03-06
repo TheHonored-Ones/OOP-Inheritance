@@ -177,4 +177,76 @@ Method Overriding allows the child class to modify or extend the functionality o
 class.
 Constructors ensure that both parent and child classes are properly initialized.
 
+## 🚀 Exercise Time
+Now that you understand inheritance, let’s do some real-world exercises!
+
+### 🛒 Easy: Exercise 1 - The Online Store
+🔹 Scenario: You’re designing a shopping website like Amazon.
+Every product has a name and a price.
+Electronics have a warranty period.
+Clothes have a size.
+Books have an author.
+
+📌 Task:
+Create a Product class with name and price.
+Create Electronics, Clothing, and Book subclasses.
+Give each subclass a unique attribute.
+Create some objects and print their details.
+
+### Medium: Exercise 2 - The Hospital System
+🔹 Scenario: A hospital has different types of workers.
+
+All employees have a name and ID number.
+Doctors can diagnose patients.
+Nurses can administer medication.
+Receptionists can schedule appointments.
+📌 Task:
+
+Create an Employee class with name and ID.
+Create Doctor, Nurse, and Receptionist subclasses.
+Each subclass should have a special action (e.g., diagnose(), administer_meds()).
+Create objects and test their actions.
+
+### 🚕 Hard: Exercise 3 - The Rideshare App (Uber/Lyft)
+🔹 Scenario: You’re building a rideshare app.
+
+All vehicles have a license plate and driver name.
+Regular taxis have a metered fare.
+Ride-sharing cars (like Uber) have dynamic pricing.
+Electric cars have a battery level.
+📌 Task:
+
+Create a Vehicle class with license_plate and driver_name.
+Create Taxi, UberCar, and ElectricCar subclasses.
+Give each subclass a unique method (e.g., calculate_fare(), check_battery()).
+Simulate a trip by creating objects and calling methods.
+
+### 🏦 Harder: Exercise 4 - The Bank System
+🔹 Scenario: You work at a bank designing an account system.
+
+All bank accounts have an account number and balance.
+A SavingsAccount has interest rates.
+A CheckingAccount has overdraft protection.
+A BusinessAccount can request loans.
+📌 Task:
+
+Create a BankAccount class.
+Create SavingsAccount, CheckingAccount, and BusinessAccount subclasses.
+Each subclass should have its own unique function.
+Simulate deposits, withdrawals, and loans.
+
+### 🛰️ Hardest: Exercise 5 - The Smart City System
+🔹 Scenario: You’re working on a smart city project.
+
+Every building has an address and a number of floors.
+Smart Homes can control appliances remotely.
+Smart Offices can track employee attendance.
+Smart Factories can automate production.
+📌 Task:
+
+Create a Building class with address and floors.
+Create SmartHome, SmartOffice, and SmartFactory subclasses.
+Each subclass should have one advanced feature.
+Simulate different activities in the city!
+
 
