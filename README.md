@@ -61,6 +61,60 @@ class Doctor extends Employee {
     }
 }
 ```
+
+## Changing Method Behavior in Overriding
+```bash
+// Parent class
+class Employee {
+    String name;
+    String position;
+
+    // Constructor
+    Employee(String name, String position) {
+        this.name = name;
+        this.position = position;
+    }
+
+    // Method to display details
+    void displayDetails() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Position: " + position);
+    }
+}
+
+// Child class (Doctor inherits from Employee)
+class Doctor extends Employee {
+    String specialization;
+
+    // Constructor
+    Doctor(String name, String specialization) {
+        super(name, "Doctor"); // Position is always "Doctor"
+        this.specialization = specialization;
+    }
+
+    // Overriding the displayDetails method to completely change its behavior
+    @Override
+    void displayDetails() {
+        System.out.println("👨‍⚕️ Meet Dr. " + name + "!");
+        System.out.println("Specialty: " + specialization);
+        System.out.println("Dr. " + name + " is an expert in " + specialization + ".");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee("John Doe", "Manager");
+        emp.displayDetails();
+
+        System.out.println(); // Line break for clarity
+
+        Doctor doc = new Doctor("Smith", "Cardiology");
+        doc.displayDetails(); // Calls the overridden method
+    }
+}
+
+```
 Explanation:
 The Doctor class is the child class that extends Employee. It inherits name and position from Employee and adds a specialization field.
 Constructor: The Doctor constructor calls the parent class constructor using super(name, position), passing the name and position parameters. 
