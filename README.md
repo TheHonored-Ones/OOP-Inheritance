@@ -1,6 +1,6 @@
 # Inheritance
 ## What is Inheritance?
-In object-oriented programming (OOP), Inheritance allows one class (child class or subclass) to inherit fields and methods from another class (parent class or superclass). 
+In object-oriented programming (OOP), Inheritance allows one class (child class or) to inherit fields and methods from another class (parent class or superclass). 
 This helps in code reuse, allowing the child class to use the functionality of the parent class, and modify or extend it as needed.
 In Java, we use the keyword extends to establish inheritance.
 
