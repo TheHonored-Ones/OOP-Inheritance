@@ -150,9 +150,11 @@ class Taxi extends Trip{
         }
     }
 
-//    @Override
-    void calc_fare(){
-//        Must be less than uber
+    @Override
+    double calc_fare(double distance){
+//        For now, price just ,metered hardcoded, will have driver side database that specifies routes, metered costs and locations etc...
+        double fare = Math.round(distance * 3.50);
+        return fare;
 
     }
 
