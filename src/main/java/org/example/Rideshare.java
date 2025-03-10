@@ -3,8 +3,13 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.sql.*;
 
 //Exclusive ride share app whereby you choose driver + car you want to driven in
+
+class DatabaseManagerClient{
+
+}
 
 class Trip{
     String driver_name;
